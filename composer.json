@@ -20,6 +20,9 @@
 		"source": "https://github.com/mpdf/mpdf",
 		"docs": "https://mpdf.github.io"
 	},
+	"replace": {
+		"mpdf/mpdf": "^8.0"
+	},
 	"require": {
 		"php": "^5.6 || ^7.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
 		"ext-gd": "*",

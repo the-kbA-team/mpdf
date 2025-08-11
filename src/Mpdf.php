@@ -32,7 +32,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 	use FpdiTrait;
 	use MpdfPsrLogAwareTrait;
 
-	const VERSION = '8.2.5';
+	const VERSION = '8.2.6';
 
 	const SCALE = 72 / 25.4;
 
@@ -21665,7 +21665,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 								} else {
 									$celladj = false;
 								}
-								if ($celladj && $celladj['border_details']['L']['s'] == 1) {
+								if (isset($celladj['border_details']['L']['s']) && $celladj['border_details']['L']['s'] == 1) {
 									$csadj = $celladj['border_details']['L']['w'];
 									$csthis = $cbord['border_details']['R']['w'];
 									// Hidden
